@@ -1,8 +1,8 @@
-# Omniauth::Samedi
+# OmniAuth Samedi
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/omniauth/samedi`. To experiment with that code, run `bin/console` for an interactive prompt.
+Samedi&reg; authentication strategy for OmniAuth.
 
-TODO: Delete this and the text above, and describe your gem
+The strategy implements the OAuth 2.0 flow for authentication with samedi&reg;, as described in [samedi&reg; Booking API docs](https://wiki.samedi.de/display/doc/Booking+API#BookingAPI-AuthenticationandAuthorization) and also fetches basic [user information](https://wiki.samedi.de/display/doc/Booking+API#BookingAPI-UserInformation).
 
 ## Installation
 
@@ -22,7 +22,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Obtain your Client Key and Client Secret by [signing up for samedi&reg; API credentials](https://patient.samedi.de/api/signup).
+
+You can then add the `samedi` provider in the way that is most appropriate for your app. E.g. if you're using Rails with OmniAuth directly, you can add the following to your `conifg/initializers/omniauth.rb`:
+
+```ruby
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :samedi, ENV.fetch('CLIENT_ID'), ENV.fetch('CLIENT_SECRET')
+end
+```
+
+After the authentication is performed, the user data is retrieved automatically.
+
+For an example of using the strategy within a Rails application, consult the [rails-booking-api](https://github.com/samedi/rails-booking-api) repo.
 
 ## Development
 

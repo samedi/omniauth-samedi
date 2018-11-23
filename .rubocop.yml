@@ -1,0 +1,25 @@
+AllCops:
+  Exclude:
+    - '.git/**/*'
+    - '*.gemspec'
+
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - 'spec/**/*.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - 'spec/**/*.rb'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Naming/FileName:
+  Exclude:
+    - 'lib/omniauth-samedi.rb'
+
+Style/BlockDelimiters:
+  EnforcedStyle: semantic
