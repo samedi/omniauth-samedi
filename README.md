@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.com/samedi/omniauth-samedi.svg?branch=master)](https://travis-ci.com/samedi/omniauth-samedi)
 [![Maintainability](https://api.codeclimate.com/v1/badges/3c597b941cd1fdbce47e/maintainability)](https://codeclimate.com/github/samedi/omniauth-samedi/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/3c597b941cd1fdbce47e/test_coverage)](https://codeclimate.com/github/samedi/omniauth-samedi/test_coverage)
+[![Gem Version](https://badge.fury.io/rb/omniauth-samedi.svg)](https://badge.fury.io/rb/omniauth-samedi)
 
 Samedi&reg; authentication strategy for OmniAuth.
 
