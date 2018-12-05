@@ -14,8 +14,8 @@ module OmniAuth
     # Changing `require` to `require_dependency` won't work, because Rails doesn't clear dependencies
     # required by initializers.
     class Samedi < OmniAuth::Strategies::OAuth2
-      BOOKING_AUTH_URL = 'https://patient.samedi.de/api/auth/v2'.freeze
-      BOOKING_API_URL = 'https://patient.samedi.de/api/booking/v3'.freeze
+      BOOKING_AUTH_URL = 'https://patient.samedi.de/api/auth/v2'
+      BOOKING_API_URL = 'https://patient.samedi.de/api/booking/v3'
 
       option :name, 'samedi'
       option(

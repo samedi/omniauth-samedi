@@ -1,6 +1,9 @@
+inherit_mode:
+  merge:
+    - Exclude
+
 AllCops:
   Exclude:
-    - '.git/**/*'
     - '*.gemspec'
 
 Metrics/LineLength:
