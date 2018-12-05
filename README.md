@@ -1,5 +1,9 @@
 # OmniAuth Samedi
 
+[![Build Status](https://travis-ci.com/samedi/omniauth-samedi.svg?branch=master)](https://travis-ci.com/samedi/omniauth-samedi)
+[![Maintainability](https://api.codeclimate.com/v1/badges/3c597b941cd1fdbce47e/maintainability)](https://codeclimate.com/github/samedi/omniauth-samedi/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/3c597b941cd1fdbce47e/test_coverage)](https://codeclimate.com/github/samedi/omniauth-samedi/test_coverage)
+
 Samedi&reg; authentication strategy for OmniAuth.
 
 The strategy implements the OAuth 2.0 flow for authentication with samedi&reg;, as described in [samedi&reg; Booking API docs](https://wiki.samedi.de/display/doc/Booking+API#BookingAPI-AuthenticationandAuthorization) and also fetches basic [user information](https://wiki.samedi.de/display/doc/Booking+API#BookingAPI-UserInformation).
